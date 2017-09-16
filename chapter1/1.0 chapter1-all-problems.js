@@ -282,8 +282,6 @@ console.log(
 	rotateMatrix([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]])
 );
 
-1.8;
-
 /**
  * 1.8
  * Zero Matrix: Write an algorithm such that if an element in an MxN matrix is 0, its entire row and
