@@ -7,7 +7,7 @@
 * [1.2.0 whatIsPermutation.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.2.0%20whatIsPermutation.js) this for understanding how to make permutation of a string.
 * [1.2.1 isPermutation.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.2.1%20isPermutation.js)
 * [1.3 URLify.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.3%20URLify.js)
-* [1.4 isPalindrom.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.4%20isPalindrom.js)
+* [1.4 isPalindrome.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.4%20isPalindrome.js)
 * [1.5 oneWay.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.5%20oneWay.js)
 * [1.6 strCompression.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.6%20strCompression.js)
 * [1.7 rotateMatrix.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter1/1.7%20rotateMatrix.js)
