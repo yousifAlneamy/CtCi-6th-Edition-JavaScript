@@ -36,3 +36,26 @@
 * [3.4 QueueViaStack.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter3/3.4%20QueueViaStack.js?ts=2)
 * [3.5 sortStack.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter3/3.5%20sortStack.js?ts=2)
 * [3.6 AnimalsQueueAdoption.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter3/3.6%20AnimalsQueueAdoption.js?ts=2)
+
+### [Chapter4](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/tree/master/chapter4) Trees and Graphs
+
+* [4.0.1 inOrderTraversal.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.0.1%20inOrderTraversal.js)
+* [4.0.2 preOrderTraversal.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.0.2%20preOrderTraversal.js)
+* [4.0.3 postOrderTraversal.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.0.3%20postOrderTraversal.js)
+* [4.0.4 breadthFirstSearch.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.0.4%20breadthFirstSearch.js)
+* [4.0.5 addNodeToBinarySearchTree.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.0.5%20addNodeToBinarySearchTree.js)
+* [4.1 routeBetweenNodes.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.1%20routeBetweenNodes.js)
+* [4.2 minimalTree.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.2%20minimalTree.js)
+* [4.3 listOfDepths.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.3%20listOfDepths.js)
+* [4.4 checkBalanced.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.4%20checkBalanced.js)
+* [4.5 validateBST.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.5%20validateBST.js)
+* [4.6 successor.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.6%20successor.js)
+* [4.7 buildOrder.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.7%20buildOrder.js)
+* [4.8 firstCommonAncestor.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.8%20firstCommonAncestor.js)
+* [4.10 checkSubTree.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.10%20checkSubTree.js)
+* [4.11 randomNode.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.11%20randomNode.js)
+* [4.12 pathsWithSum.js](https://github.com/yousifAlneamy/CtCi-6th-Edition-JavaScript/blob/master/chapter4/4.12%20pathsWithSum.js)
+
+
+
+
