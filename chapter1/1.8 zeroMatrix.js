@@ -19,18 +19,35 @@ function zeroMatrix(arr) {
 	}
 	console.log(rowDec, colDec);
 
-	for (let i = 0; i < arr.length; i++) {
-		let rowZeroFlag = rowDec[i];
-		for (let j = 0; j < arr[0].length; j++) {
-			if (rowZeroFlag) {
-				arr[i][j] = 0;
-			} else if (colDec[j]) {
-				arr[i][j] = 0;
-			}
+	for (let i = 0; i < rowDec.length; i++) {
+		if (rowDec[i]) {
+			nullifyRow(arr, i);
+		}
+	}
+	for (let i = 0; i < colDec.length; i++) {
+		if (colDec[i]) {
+			nullifyCol(arr, i);
 		}
 	}
 	return arr;
 }
+function nullifyRow(arr, row) {
+	for (let i = 0; i < arr[0].length; i++) {
+		arr[row][i] = 0;
+	}
+}
+
+function nullifyCol(arr, colon) {
+	for (let i = 0; i < arr.length; i++) {
+		arr[i][colon] = 0;
+	}
+}
 console.log(
-	zeroMatrix([[0, 2, 3, 4, 1], [6, 0, 8, 9, 10], [11, 12, 1, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 1, 25]])
+	zeroMatrix([
+		[0, 2, 3, 4, 1],
+		[6, 2, 8, 9, 10],
+		[11, 12, 1, 14, 15],
+		[16, 17, 18, 19, 20],
+		[0, 22, 23, 1, 25]
+	])
 );

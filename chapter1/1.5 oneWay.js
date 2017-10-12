@@ -20,23 +20,23 @@ function oneWay(str1, str2) {
 		return false;
 	}
 
-	let i = 0,
-		k = 0,
+	let index1 = 0,
+		index2 = 0,
 		edit = 0;
 
-	while (i < len1 || k < len2) {
-		if (str1.charAt(i) === str2.charAt(k)) {
-			i++;
-			k++;
-		} else if (str1.charAt(i + 1) === str2.charAt(k)) {
-			i++;
+	while (index1 < len1 || index2 < len2) {
+		if (str1.charAt(index1) === str2.charAt(index2)) {
+			index1++;
+			index2++;
+		} else if (str1.charAt(index1 + 1) === str2.charAt(index2)) {
+			index1++;
 			edit++;
-		} else if (str1.charAt(i) === str2.charAt(k + 1)) {
-			k++;
+		} else if (str1.charAt(index1) === str2.charAt(index2 + 1)) {
+			index2++;
 			edit++;
 		} else {
-			i++;
-			k++;
+			index1++;
+			index2++;
 			edit++;
 		}
 		if (edit > 1) return false;
@@ -44,4 +44,4 @@ function oneWay(str1, str2) {
 	return true;
 }
 // check the book solution
-console.log(oneWay("apsle", "aple"));
+console.log(oneWay("apshle", "apggle"));
