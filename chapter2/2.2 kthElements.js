@@ -30,7 +30,7 @@ function countFromEnd(node, k) {
 
 	if (count <= k) {
 		console.log(node.data);
-		kthNode = new Node(node.data, kthNode);
+		kthNode = node;
 	}
 
 	return { count, kthNode };

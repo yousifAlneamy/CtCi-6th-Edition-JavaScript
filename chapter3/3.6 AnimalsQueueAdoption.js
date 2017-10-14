@@ -27,7 +27,7 @@ class AnimalsQueueAdoption {
 		const cat = this.cat;
 
 		if (!type) {
-			if (!dog.length && !dog.length) {
+			if (!dog.length && !cat.length) {
 				throw { Error: "Both queues are empty!" };
 			}
 

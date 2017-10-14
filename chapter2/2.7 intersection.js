@@ -18,7 +18,7 @@ class Node {
  * @param {Node} list1
  * @param {Node} list2
  */
-function intersection(list1, list2) {
+function intersection1(list1, list2) {
 	if (!list1 || !list2) {
 		return null;
 	}
@@ -47,6 +47,35 @@ function intersection(list1, list2) {
 	return null;
 }
 
+function intersection2(list1, list2) {
+	if (!list1 || !list2) {
+		return null;
+	}
+
+	let head1 = list1;
+	let head2 = list2;
+	// skipping extra nodes from beginning
+	while (list1 || list2) {
+		if (!list1) {
+			head2 = head2.next;
+		}
+		if (!list2) {
+			head1 = head1.next;
+		}
+		list1 = list1 ? list1.next : null;
+		list2 = list2 ? list2.next : null;
+	}
+
+	while (head1) {
+		if (head1 == head2) {
+			return head1;
+		}
+		head1 = head1.next;
+		head2 = head2.next;
+	}
+	return null;
+}
+
 let node = new Node(1);
 let node2 = new Node(2);
 node.next = node2;
@@ -60,4 +89,8 @@ node4.next = node5;
 let node6 = new Node(1);
 node5.next = node6;
 
-console.log(intersection(node, node4));
+console.log(
+	"intersection1(node, new Node(10))",
+	intersection1(node, new Node(10))
+);
+console.log("intersection2(node, node4)", intersection2(node, node4));

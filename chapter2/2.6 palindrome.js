@@ -15,16 +15,6 @@ class Node {
  * @param {Node} list
  */
 function isPalindrome1(list) {
-	function reverse(list) {
-		let head = null;
-		while (list) {
-			const newNode = new Node(list.data);
-			newNode.next = head;
-			head = newNode;
-			list = list.next;
-		}
-		return head;
-	}
 	reversedList = reverse(list);
 
 	while (list) {
@@ -37,8 +27,19 @@ function isPalindrome1(list) {
 	return true;
 }
 
+function reverse(list) {
+	let head = null;
+	while (list) {
+		const newNode = new Node(list.data);
+		newNode.next = head;
+		head = newNode;
+		list = list.next;
+	}
+	return head;
+}
+
 let node = new Node(1);
-let node2 = new Node(2);
+let node2 = new Node(4);
 node.next = node2;
 let node3 = new Node(3);
 node2.next = node3;
@@ -108,27 +109,27 @@ console.log(isPalindrome2(node));
  */
 function isPalindrome3(node) {
 	// recursive version
-	let count = 0; // global counter
+	const countWrapper = { count: 0 }; // counter instance
+	return compareFromEnd(node, node, countWrapper) ? true : false;
+}
 
-	function compareFromEnd(node, head) {
-		if (!node) {
-			return head;
-		}
-		count++;
-
-		head = compareFromEnd(node.next, head);
-
-		if (count <= 1) {
-			return head;
-		}
-		count -= 2;
-
-		if (!head || head.data !== node.data) {
-			return null;
-		}
-		return head.next ? head.next : head;
+function compareFromEnd(node, head, wrapper) {
+	if (!node) {
+		return head;
 	}
-	return compareFromEnd(node, node) ? true : false;
+	wrapper.count++;
+
+	head = compareFromEnd(node.next, head, wrapper);
+
+	if (wrapper.count <= 1) {
+		return head;
+	}
+	wrapper.count -= 2;
+
+	if (!head || head.data !== node.data) {
+		return null;
+	}
+	return head.next ? head.next : head;
 }
 
 node = new Node(1);

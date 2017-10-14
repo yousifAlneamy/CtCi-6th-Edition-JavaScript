@@ -25,12 +25,12 @@ class SetOfStacks {
 	push(item) {
 		const stacksSet = this.stacksSet;
 		let index = stacksSet.length - 1;
-		const newNode = new Node(item);
 		if (stacksSet[index].size >= this.maxSize) {
 			stacksSet.push({ top: null, size: 0 });
 			index++;
 		}
 
+		const newNode = new Node(item);
 		newNode.next = stacksSet[index].top;
 		stacksSet[index].top = newNode;
 		stacksSet[index].size++;
