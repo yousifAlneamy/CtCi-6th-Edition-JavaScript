@@ -19,6 +19,10 @@ function permutation(str) {
 	return permutationArr;
 
 	function calcMutations(str, dec, arrMutation = []) {
+		if (str.length <= arrMutation.length) {
+			permutationArr.push(arrMutation.join(""));
+			return;
+		}
 		for (let c in dec) {
 			if (dec[c] > 0) {
 				const dec2 = {};
@@ -28,9 +32,6 @@ function permutation(str) {
 				arrMutation2.push(c);
 				calcMutations(str, dec2, arrMutation2);
 			}
-		}
-		if (str.length <= arrMutation.length) {
-			permutationArr.push(arrMutation.join(""));
 		}
 	}
 }
